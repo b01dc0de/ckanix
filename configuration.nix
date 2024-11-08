@@ -94,13 +94,20 @@
 # Program config:
   programs.firefox.enable = true;
   programs.chromium.enable = true;
+  programs.neovim = {
+    enable = true;
+    viAlias = true;
+    vimAlias = true;
+  };
 
 # Define pkgs:
   environment.systemPackages = with pkgs; [
     kitty
     git
     github-desktop
+    tmux
     vim-full
+    vscode
   ];
 
   # NOTE: Doublecheck before changing this value

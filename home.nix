@@ -29,6 +29,10 @@
   };
   programs.kitty = {
     enable = true;
+    font = {
+      name = "JetBrainsMono Nerd Font";
+      package = pkgs.nerdfonts;
+    };
     settings = {
       confirm_os_window_close = 0;
       dynamic_background_opacity = true;
