@@ -1,13 +1,6 @@
 { config, pkgs, ... }:
 
 {
-  imports = [
-    ./hardware-configuration.nix
-  ];
-
-# Hostname:
-  networking.hostName = "primus";
-
 # Enable flakes:
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
@@ -105,11 +98,11 @@
     kitty
     git
     github-desktop
+    neovide
     tmux
     vim-full
     vscode
   ];
 
-  # NOTE: Doublecheck before changing this value
-  system.stateVersion = "24.11";
+  system.stateVersion = "24.11"; # NOTE: Doublecheck before changing this value
 }
