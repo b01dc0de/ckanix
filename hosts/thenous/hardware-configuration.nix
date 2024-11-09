@@ -14,7 +14,7 @@
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/ee9aeb2b-90f4-458b-86d1-016b3d02114f";
+    { device = "/dev/disk/by-uuid/a9f81355-f7cf-4de4-a23f-7a7ca8d40fe1";
       fsType = "ext4";
     };
 
@@ -24,21 +24,7 @@
       options = [ "fmask=0077" "dmask=0077" ];
     };
 
-  swapDevices = [ {
-  	device = "/var/lib/swapfile";
-	size = 16*1024;
-  } ];
-
-  services.xserver.videoDrivers = [ "nvidia" ];
-  hardware.nvidia = {
-    open = true;
-    prime = {
-      offload.enable = true;
-      offload.enableOffloadCmd = true;
-      intelBusId = "PCI:0:2:0";
-      nvidiaBusId = "PCI:1:0:0";
-    };
-  };
+  swapDevices = [ ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
   # (the default) this is the recommended approach. When using systemd-networkd it's

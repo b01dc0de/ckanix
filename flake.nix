@@ -22,10 +22,10 @@
           }
         ];
       };
-      thedev = nixpkgs.lib.nixosSystem {
+      thenous = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          hosts/thedev
+          hosts/thenous
           home-manager.nixosModules.home-manager
           {
             home-manager.backupFileExtension = "backup";
