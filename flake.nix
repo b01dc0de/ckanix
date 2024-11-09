@@ -12,7 +12,20 @@
       primus = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-	  hosts/primus
+          hosts/primus
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.backupFileExtension = "backup";
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.cka = import ./home.nix;
+          }
+        ];
+      };
+      thedev = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [
+          hosts/thedev
           home-manager.nixosModules.home-manager
           {
             home-manager.backupFileExtension = "backup";
