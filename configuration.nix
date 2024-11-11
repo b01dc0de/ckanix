@@ -99,6 +99,7 @@
     git
     github-desktop
     neovide
+    spotify
     tmux
     vim-full
     vscode
