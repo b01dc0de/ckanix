@@ -59,6 +59,10 @@
     pulse.enable = true;
   };
 
+# Bluetooth:
+  hardware.bluetooth.enable = true;
+  hardware.bluetooth.powerOnBoot = true;
+
 # Define users:
   users.users.cka = {
     isNormalUser = true;
