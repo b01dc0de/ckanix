@@ -38,8 +38,8 @@
       dynamic_background_opacity = true;
       enable_audio_bell = false;
       mouse_hide_wait = "-1.0";
-      background_opacity = "0.75";
-      background_blur = 5;
+      background_opacity = "0.4";
+      background_blur = 4;
     };
     themeFile = "Catppuccin-Macchiato";
   };
