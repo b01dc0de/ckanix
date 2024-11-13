@@ -63,6 +63,12 @@
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
 
+# Security:
+  security.polkit.enable = true;
+
+# libexec:
+  environment.pathsToLink = [ "/libexec" ];
+
 # Define users:
   users.users.cka = {
     isNormalUser = true;
@@ -99,6 +105,9 @@
 
 # Define pkgs:
   environment.systemPackages = with pkgs; [
+    catppuccin
+    dracula-theme
+    dracula-icon-theme
     kitty
     git
     github-desktop
