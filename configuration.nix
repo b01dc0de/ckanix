@@ -112,6 +112,7 @@
     git
     github-desktop
     neovide
+    obsidian
     spotify
     tmux
     vim-full
