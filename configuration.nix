@@ -108,6 +108,7 @@
     catppuccin
     dracula-theme
     dracula-icon-theme
+    fastfetch
     kitty
     git
     github-desktop
