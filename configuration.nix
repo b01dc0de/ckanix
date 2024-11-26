@@ -37,6 +37,7 @@
 
 # DE / WM:
   services.xserver.enable = true;
+# KDE Plasma
   services.displayManager.sddm.enable = true;
   services.desktopManager.plasma6.enable = true;
 
@@ -105,10 +106,12 @@
 
 # Define pkgs:
   environment.systemPackages = with pkgs; [
+    bitwarden
     catppuccin
     dracula-theme
     dracula-icon-theme
     fastfetch
+    kdePackages.partitionmanager
     kitty
     git
     github-desktop

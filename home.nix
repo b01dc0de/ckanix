@@ -12,11 +12,16 @@
       "Xcursor.size" = 16;
       "Xft.dpi" = 144;
   };
-
+  
 # Pkgs:
   home.packages = with pkgs; [
     fastfetch
+    protonup
   ];
+
+  home.sessionVariables = {
+    STEAM_EXTRA_COMPAT_TOOLS_PATHS = "\${HOME}/.steam/root/compatibilitytools.d";
+  };
 
 # Programs config:
   programs.alacritty = {
