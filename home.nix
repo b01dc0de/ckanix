@@ -4,7 +4,7 @@
 # home-manager settings:
   home.homeDirectory = "/home/cka";
   home.username = "cka";
-  home.stateVersion = "24.11";
+  home.stateVersion = "25.05";
   programs.home-manager.enable = true;
 
 # Xresources:
@@ -36,15 +36,14 @@
     enable = true;
     font = {
       name = "JetBrainsMono Nerd Font";
-      package = pkgs.nerdfonts;
     };
     settings = {
       confirm_os_window_close = 0;
       dynamic_background_opacity = true;
       enable_audio_bell = false;
       mouse_hide_wait = "-1.0";
-      background_opacity = "0.4";
-      background_blur = 4;
+      background_opacity = "0.6";
+      background_blur = 6;
     };
     themeFile = "Catppuccin-Macchiato";
   };

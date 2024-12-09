@@ -84,9 +84,8 @@
   fonts.enableDefaultPackages = true;
   fonts.fontDir.enable = true;
   fonts.packages = with pkgs; [
-    nerdfonts
     oxygenfonts
-  ];
+  ] ++ builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.nerd-fonts);
 
 # Enable GPU support:
   hardware.graphics.enable = true;
@@ -123,5 +122,5 @@
     vscode
   ];
 
-  system.stateVersion = "24.11"; # NOTE: Doublecheck before changing this value
+  system.stateVersion = "25.05"; # NOTE: Doublecheck before changing this value
 }
